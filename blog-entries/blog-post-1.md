@@ -3,7 +3,7 @@ identifier: blog-post-1
 title: Blog Post 1
 description: The first blog post!
 publication_date: 2022-04-07T23:05:51.324Z
-entry_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+entry_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit!
 banner_image: /dist/uploads/cats.jpg
 banner_image_alt_description: Two cute cats snuggling on a couch on top of a
   pair of pants that they have covered in fur.
