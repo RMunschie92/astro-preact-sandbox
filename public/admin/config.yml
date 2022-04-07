@@ -30,4 +30,4 @@ collections:
       - {label: "Banner Image", name: "banner_image", widget: "image", required: false}
       - {label: "Banner Image Alt Description", name: "banner_image_alt_description", widget: "string", required: false}
       - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog-entry.astro"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/TestEntry.astro"}
