@@ -14,7 +14,7 @@ collections:
     create: true
     extension: ".md"
     format: "frontmatter"
-    folder: "/src/pages/blog-entries/"
+    folder: "src/pages/blog-entries/"
     slug: "{{fields.title}}"
     sortable_fields: ['publication_date', 'author', 'title']
     fields: 
