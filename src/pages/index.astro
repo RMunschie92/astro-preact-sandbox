@@ -1,0 +1,13 @@
+---
+// Imports
+import Base from '../layouts/Base.astro';
+import Counter from '../components/specifics/Counter.jsx';
+import '../styles/pages/index.css';
+---
+<Base title="Index">
+  <h2>Index Page</h2>
+
+  <img src="/cats.jpg" alt="Two cute cats snuggling on a couch on top of a pair of pants that they have covered in fur." />
+
+  <Counter client:load />
+</Base>

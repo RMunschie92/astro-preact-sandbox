@@ -1,0 +1,341 @@
+/*------------------------------------------------------------------------------
+ * Global variables
+------------------------------------------------------------------------------*/
+:root {
+  /* Custom Colors */
+  --main-color: #801f5a;
+
+  --contrast-color: #FFFFFF;
+
+  --opposite-color: #000000;
+
+  /* Font */
+  --main-font: 'Open Sans', sans-serif;
+  --alt-font: 'Open Sans Condensed', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-heavier: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800; 
+
+  /* 
+    Breakpoints 
+    NOTE: these CANNOT be used as CSS variables but are helpful for knowledge 
+    of which breakpoints to use.
+  */
+  --media-desktop-max: 1921px;
+  --media-desktop-: 1441px;
+  --media-desktop--: 1369px;
+  --media-desktop---: 1281px;
+  --media-desktop-min: 1025px;
+  --media-mobile-max: 901px;
+  --media-mobile-: 769px;
+  --media-mobile--: 421px;
+  --media-mobile-min: 321px;
+
+  /* Utility variable for presentational borders or <hr/> elements */
+  --visual-separator: 1px solid var(--contrast-color---);
+
+  /* Shadows */
+  --box-shadow:
+    0.8px 0.8px 0.7px rgba(0, 0, 0, 0.065),
+    1.1px 1.1px 1.5px rgba(0, 0, 0, 0.095),
+    2px 2px 4px rgba(0, 0, 0, 0.16)
+  ;
+
+  --box-shadow-hover:
+    4.1px 4.1px 2.7px rgba(0, 0, 0, 0.032),
+    5.4px 5.4px 5.8px rgba(0, 0, 0, 0.048),
+    10px 10px 15px rgba(0, 0, 0, 0.08)
+  ;
+}
+
+/*------------------------------------------------------------------------------
+ * General
+------------------------------------------------------------------------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+
+:root {
+  --px-to-rem-4: 0.25rem;
+  --px-to-rem-6: 0.375rem;
+  --px-to-rem-8: 0.5rem;
+  --px-to-rem-10: 0.625rem;
+  --px-to-rem-12: 0.75rem;
+  --px-to-rem-14: 0.875rem;
+  --px-to-rem-16: 1rem;
+  --px-to-rem-18: 1.125rem;
+  --px-to-rem-19: 1.187rem;
+  --px-to-rem-20: 1.25rem;
+  --px-to-rem-21: 1.312rem;
+  --px-to-rem-22: 1.375rem;
+  --px-to-rem-24: 1.5rem;
+  --px-to-rem-25: 1.562rem;
+  --px-to-rem-28: 1.75rem;
+  --px-to-rem-30: 1.875rem;
+  --px-to-rem-32: 2rem;
+  --px-to-rem-34: 2.125rem;
+  --px-to-rem-38: 2.375rem;
+  --px-to-rem-40: 2.5rem;
+  --px-to-rem-48: 3rem;
+  --px-to-rem-50: 3.125rem;
+  --px-to-rem-56: 3.5rem;
+  --px-to-rem-60: 3.75rem;
+  --px-to-rem-91: 5.687rem;
+}
+
+@media (min-width: 769px) {
+  html { font-size: 18px; }
+
+  /* Pixels to rems */
+  :root {
+    --px-to-rem-4: 0.222rem;
+    --px-to-rem-6: 0.333rem;
+    --px-to-rem-8: 0.444rem;
+    --px-to-rem-12: 0.666rem;
+    --px-to-rem-14: 0.777rem;
+    --px-to-rem-16: 0.888rem;
+    --px-to-rem-18: 1rem;
+    --px-to-rem-19: 1.055rem;
+    --px-to-rem-20: 1.111rem;
+    --px-to-rem-21: 1.166rem;
+    --px-to-rem-22: 1.222rem;
+    --px-to-rem-24: 1.333rem;
+    --px-to-rem-25: 1.388rem;
+    --px-to-rem-28: 1.555rem;
+    --px-to-rem-30: 1.666rem;
+    --px-to-rem-32: 1.777rem;
+    --px-to-rem-34: 1.889rem;
+    --px-to-rem-38: 2.111rem;
+    --px-to-rem-40: 2.222rem;
+    --px-to-rem-48: 2.666rem;
+    --px-to-rem-50: 2.777rem;
+    --px-to-rem-56: 3.111rem;
+    --px-to-rem-60: 3.333rem;
+    --px-to-rem-91: 5.055rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  html { font-size: 18px; }
+
+  /* Pixels to rems */
+  :root {
+    --px-to-rem-4: 0.222rem;
+    --px-to-rem-6: 0.333rem;
+    --px-to-rem-8: 0.444rem;
+    --px-to-rem-12: 0.666rem;
+    --px-to-rem-14: 0.777rem;
+    --px-to-rem-16: 0.888rem;
+    --px-to-rem-18: 1rem;
+    --px-to-rem-19: 1.055rem;
+    --px-to-rem-20: 1.111rem;
+    --px-to-rem-21: 1.166rem;
+    --px-to-rem-22: 1.222rem;
+    --px-to-rem-24: 1.333rem;
+    --px-to-rem-25: 1.388rem;
+    --px-to-rem-28: 1.555rem;
+    --px-to-rem-30: 1.666rem;
+    --px-to-rem-32: 1.777rem;
+    --px-to-rem-34: 1.889rem;
+    --px-to-rem-38: 2.111rem;
+    --px-to-rem-40: 2.222rem;
+    --px-to-rem-48: 2.666rem;
+    --px-to-rem-50: 2.777rem;
+    --px-to-rem-56: 3.111rem;
+    --px-to-rem-60: 3.333rem;
+    --px-to-rem-91: 5.055rem;
+  }
+}
+
+@media (min-width: 1181px) {
+  html { font-size: 19px; }
+
+  /* Pixels to rems */
+  :root {
+    --px-to-rem-4: 0.21rem;
+    --px-to-rem-6: 0.315rem;
+    --px-to-rem-8: 0.421rem;
+    --px-to-rem-12: 0.631rem;
+    --px-to-rem-14: 0.736rem;
+    --px-to-rem-16: 0.842rem;
+    --px-to-rem-18: 0.947rem;
+    --px-to-rem-19: 1rem;
+    --px-to-rem-20: 1.052rem;
+    --px-to-rem-21: 1.105rem;
+    --px-to-rem-22: 1.157rem;
+    --px-to-rem-24: 1.263rem;
+    --px-to-rem-25: 1.315rem;
+    --px-to-rem-28: 1.473rem;
+    --px-to-rem-30: 1.578rem;
+    --px-to-rem-32: 1.684rem;
+    --px-to-rem-34: 1.789rem;
+    --px-to-rem-38: 2rem;
+    --px-to-rem-40: 2.105rem;
+    --px-to-rem-48: 2.526rem;
+    --px-to-rem-50: 2.631rem;
+    --px-to-rem-56: 2.947rem;
+    --px-to-rem-60: 3.157rem;
+    --px-to-rem-91: 4.789rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  html { font-size: 20px; }
+
+  /* Pixels to rems */
+  :root {
+    --px-to-rem-4: 0.2rem;
+    --px-to-rem-6: 0.3rem;
+    --px-to-rem-8: 0.4rem;
+    --px-to-rem-12: 0.6rem;
+    --px-to-rem-14: 0.7rem;
+    --px-to-rem-16: 0.8rem;
+    --px-to-rem-18: 0.9rem;
+    --px-to-rem-19: 0.95rem;
+    --px-to-rem-20: 1rem;
+    --px-to-rem-21: 1.05rem;
+    --px-to-rem-22: 1.1rem;
+    --px-to-rem-24: 1.2rem;
+    --px-to-rem-25: 1.25rem;
+    --px-to-rem-28: 1.4rem;
+    --px-to-rem-30: 1.5rem;
+    --px-to-rem-32: 1.6rem;
+    --px-to-rem-34: 1.7rem;
+    --px-to-rem-38: 1.9rem;
+    --px-to-rem-40: 2rem;
+    --px-to-rem-48: 2.4rem;
+    --px-to-rem-50: 2.5rem;
+    --px-to-rem-56: 2.8rem;
+    --px-to-rem-60: 3rem;
+    --px-to-rem-91: 4.55rem;
+  }
+}
+
+@media (min-width: 1601px) {
+  html { font-size: 22px; }
+
+  /* Pixels to rems */
+  :root {
+    --px-to-rem-4: 0.182rem;
+    --px-to-rem-6: 0.272rem;
+    --px-to-rem-8: 0.363rem;
+    --px-to-rem-12: 0.545rem;
+    --px-to-rem-14: 0.636rem;
+    --px-to-rem-16: 0.727rem;
+    --px-to-rem-18: 0.818rem;
+    --px-to-rem-19: 0.863rem;
+    --px-to-rem-20: 0.909rem;
+    --px-to-rem-21: 0.954rem;
+    --px-to-rem-22: 1rem;
+    --px-to-rem-24: 1.09rem;
+    --px-to-rem-25: 1.136rem;
+    --px-to-rem-28: 1.272rem;
+    --px-to-rem-30: 1.363rem;
+    --px-to-rem-32: 1.454rem;
+    --px-to-rem-34: 1.545rem;
+    --px-to-rem-38: 1.727rem;
+    --px-to-rem-40: 1.818rem;
+    --px-to-rem-48: 2.181rem;
+    --px-to-rem-50: 2.272rem;
+    --px-to-rem-56: 2.545rem;
+    --px-to-rem-60: 2.727rem;
+    --px-to-rem-91: 4.136rem;
+  }
+}
+
+@media (min-width: 1921px) {
+  html { font-size: 24px; }
+
+  /* Pixels to rems */
+  :root {
+    --px-to-rem-4: 0.167rem;
+    --px-to-rem-6: 0.25rem;
+    --px-to-rem-8: 0.333rem;
+    --px-to-rem-12: 0.5rem;
+    --px-to-rem-14: 0.583rem;
+    --px-to-rem-16: 0.666rem;
+    --px-to-rem-18: 0.75rem;
+    --px-to-rem-19: 0.791rem;
+    --px-to-rem-20: 0.833rem;
+    --px-to-rem-21: 0.875rem;
+    --px-to-rem-22: 0.916rem;
+    --px-to-rem-24: 1rem;
+    --px-to-rem-25: 1.041rem;
+    --px-to-rem-28: 1.166rem;
+    --px-to-rem-30: 1.25rem;
+    --px-to-rem-32: 1.333rem;
+    --px-to-rem-34: 1.417rem;
+    --px-to-rem-38: 1.583rem;
+    --px-to-rem-40: 1.666rem;
+    --px-to-rem-48: 2rem;
+    --px-to-rem-50: 2.083rem;
+    --px-to-rem-56: 2.333rem;
+    --px-to-rem-60: 2.5rem;
+    --px-to-rem-91: 3.791rem;
+  }
+}
+
+@media (min-width: 2001px) {
+  html {
+    font-size: 28px;
+    font-size: clamp(24px, 3.25vh, 28px);
+  }
+
+  /* Pixels to rems - based on 20px */
+  :root {
+    --px-to-rem-4: 0.2rem;
+    --px-to-rem-6: 0.3rem;
+    --px-to-rem-8: 0.4rem;
+    --px-to-rem-12: 0.6rem;
+    --px-to-rem-14: 0.7rem;
+    --px-to-rem-16: 0.8rem;
+    --px-to-rem-18: 0.9rem;
+    --px-to-rem-19: 0.95rem;
+    --px-to-rem-20: 1rem;
+    --px-to-rem-21: 1.05rem;
+    --px-to-rem-22: 1.1rem;
+    --px-to-rem-24: 1.2rem;
+    --px-to-rem-25: 1.25rem;
+    --px-to-rem-28: 1.4rem;
+    --px-to-rem-30: 1.5rem;
+    --px-to-rem-32: 1.6rem;
+    --px-to-rem-34: 1.7rem;
+    --px-to-rem-38: 1.9rem;
+    --px-to-rem-40: 2rem;
+    --px-to-rem-48: 2.4rem;
+    --px-to-rem-50: 2.5rem;
+    --px-to-rem-56: 2.8rem;
+    --px-to-rem-60: 3rem;
+    --px-to-rem-91: 4.55rem;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+/*------------------------------------------------------------------------------
+ * Body rules
+------------------------------------------------------------------------------*/
+body {
+  background-color: var(--contrast-color-);
+  max-width: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+body main {
+  padding: 1rem;
+}

@@ -1,0 +1,4 @@
+body.about main p {
+  max-width: 90ch;
+  margin-bottom: 1rem;
+}
