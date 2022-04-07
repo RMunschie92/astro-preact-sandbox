@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "/public/uploads"
+public_folder: "/dist/uploads"
+collections:
+  #
+  # Blog entries
+  #
+  - name: "blog_entries"
+    label: "Blog Entries"
+    editor:
+      preview: false 
+    create: true
+    extension: ".md"
+    format: "frontmatter"
+    folder: "blog-entries/"
+    slug: "{{fields.title}}"
+    sortable_fields: ['publication_date', 'author', 'title']
+    fields: 
+      - {label: "Identifier (set only once)", name: "identifier", widget: "string", hint: "URL friendly string containing only alphanumeric characters and hyphens. i.e. 'a-sample-identifier-1'"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", hint: "Used by search engines and social media", widget: "string"}
+      - {label: "Social media image", name: "social_media_image", widget: "image", required: false}
+      - label: "Publication Date"
+        name: "publication_date"
+        widget: "datetime"
+        date_format: "DD.MM.YYYY"
+        time_format: false
+      - {label: "Entry Description", hint: "~160 chars max.", name: "entry_description", widget: "text"}
+      - {label: "Banner Image", name: "banner_image", widget: "image", required: false}
+      - {label: "Banner Image Alt Description", name: "banner_image_alt_description", widget: "string", required: false}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog-entry.astro"}
