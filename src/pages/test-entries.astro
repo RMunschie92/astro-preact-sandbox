@@ -4,7 +4,13 @@ import Base from '../layouts/Base.astro';
 import '../styles/pages/test-entries.css';
 
 // Fetch all files in /pages/test-entries/
-const testEntries = await Astro.glob('./test-entries/*.md');
+let testEntries = [];
+try {
+  testEntries = await Astro.glob('./test-entries/*.md');
+}
+catch {
+  console.error('No entries in /test-entries.')
+}
 ---
 <Base title="test-entries">
 
