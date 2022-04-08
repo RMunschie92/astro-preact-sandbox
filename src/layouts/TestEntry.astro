@@ -29,6 +29,8 @@ const { content } = Astro.props;
 
     <main>
       <article>
+
+        <img src={content.banner_image} alt={content.banner_image_alt_description} />
         <h2>{content.title}</h2>
         <slot /> <!-- Child passed is injected here -->
       </article>

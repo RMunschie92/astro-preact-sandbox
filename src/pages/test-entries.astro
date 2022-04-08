@@ -1,18 +1,21 @@
 ---
 // Imports
 import Base from '../layouts/Base.astro';
-const testEntries = await Astro.glob('./test-entries/test-entry-1.md');
----
-<Base title="Test Entries">
+import '../styles/pages/test-entries.css';
 
-  <div>
-    {testEntries.slice(0, 3).map((post) => (
-      <article>
+// Fetch all files in /pages/test-entries/
+const testEntries = await Astro.glob('./test-entries/*.md');
+---
+<Base title="test-entries">
+
+  <ul>
+    {testEntries.map((post) => (
+      <li>
         <h1>{post.frontmatter.title}</h1>
         <p>{post.frontmatter.description}</p>
-        <a href={'test-entries/'+post.frontmatter.identifier}>Read more</a>
-      </article>
+        <a href={'test-entries/'+ post.frontmatter.identifier}>Read more</a>
+      </li>
     ))}
-    </div>
+  </ul>
 
 </Base>

@@ -4,6 +4,8 @@ title: Test Entry 1
 description: The first test entry
 publication_date: 2022-04-07T23:31:17.259Z
 entry_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+banner_image: /uploads/wellstudio-x0cyv7bipgs-unsplash.jpg
+banner_image_alt_description: A wooden bowl filled with red apples resting on the corner of a covered table.
 layout: ../../layouts/TestEntry.astro
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet massa vitae tortor condimentum lacinia quis vel. Ut enim blandit volutpat maecenas volutpat. Porta nibh venenatis cras sed felis eget velit aliquet. Malesuada fames ac turpis egestas. Suscipit tellus mauris a diam maecenas sed. Purus gravida quis blandit turpis. Mauris augue neque gravida in fermentum et. Ut ornare lectus sit amet est placerat in egestas. Vel facilisis volutpat est velit egestas dui id ornare. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Pellentesque habitant morbi tristique senectus et netus et. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Laoreet sit amet cursus sit amet dictum sit amet justo. Mi bibendum neque egestas congue quisque egestas.

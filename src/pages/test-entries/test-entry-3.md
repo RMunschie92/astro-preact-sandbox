@@ -4,7 +4,7 @@ title: Test Entry 3
 description: The third test entry
 publication_date: 2022-04-08T13:38:45.970Z
 entry_description: "Rhoncus aenean vel elit scelerisque mauris pulvinar pellentesque. "
-banner_image: /dist/uploads/wellstudio-x0cyv7bipgs-unsplash.jpg
+banner_image: /uploads/wellstudio-x0cyv7bipgs-unsplash.jpg
 banner_image_alt_description: A wooden bowl filled with red apples resting on the corner of a covered table.
 layout: ../../layouts/TestEntry.astro
 ---

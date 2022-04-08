@@ -4,7 +4,7 @@ title: Test Entry 2
 description: The second test entry
 publication_date: 2022-04-08T13:34:55.651Z
 entry_description: Volutpat commodo sed egestas egestas fringilla phasellus faucibus.
-banner_image: /dist/uploads/suzanne-boureau-wpwx8x2e03o-unsplash.jpg
+banner_image: /uploads/suzanne-boureau-wpwx8x2e03o-unsplash.jpg
 banner_image_alt_description: A wooden bowl filled with red apples resting on the corner of a covered table.
 layout: ../../layouts/TestEntry.astro
 ---

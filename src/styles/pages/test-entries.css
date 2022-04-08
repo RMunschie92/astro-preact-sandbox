@@ -1,0 +1,7 @@
+body.test-entries main ul li {
+  margin-bottom: 2rem;
+}
+
+body.test-entries main ul li a {
+  color: var(--main-color);
+}
