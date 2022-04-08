@@ -1,0 +1,18 @@
+---
+// Imports
+import Base from '../layouts/Base.astro';
+const testEntries = await Astro.glob('./test-entries/test-entry-1.md');
+---
+<Base title="Test Entries">
+
+  <div>
+    {testEntries.slice(0, 3).map((post) => (
+      <article>
+        <h1>{post.frontmatter.title}</h1>
+        <p>{post.frontmatter.description}</p>
+        <a href={'test-entries/'+post.frontmatter.identifier}>Read more</a>
+      </article>
+    ))}
+    </div>
+
+</Base>
