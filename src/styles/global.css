@@ -338,4 +338,5 @@ body {
 
 body main {
   padding: 1rem;
+  min-height: calc(100vh - 7rem);
 }
