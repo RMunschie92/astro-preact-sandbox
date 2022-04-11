@@ -4,26 +4,16 @@ backend:
 media_folder: "/public/uploads"
 public_folder: "/uploads"
 collections:
-  #
-  # Test entries
-  #
-  - name: "test_entries"
-    label: "Test Entries"
+  - name: "blog_entries"
+    label: "Blog Entries"
     editor:
-      preview: false 
-    create: true
+      preview: false
     extension: ".md"
     format: "frontmatter"
-    folder: "src/pages/test-entries/"
-    slug: "{{fields.title}}"
-    fields: 
+    folder: "src/pages/test-entries"
+    fields:
       - {label: "Identifier (set only once)", name: "identifier", widget: "string", hint: "URL friendly string containing only alphanumeric characters and hyphens. i.e. 'a-sample-identifier-1'"}
-      - {label: "Title", name: "title", widget: "string"}
-      - label: "Publication Date"
-        name: "publication_date"
-        widget: "datetime"
-        date_format: "DD.MM.YYYY"
-        time_format: false
+      - {label: "Title", name: "title", widgt: "string"}
       - {label: "Banner Image", name: "banner_image", widget: "image", required: false}
       - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/TestEntry.astro"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/TestEntry.astro"}
