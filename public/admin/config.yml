@@ -9,8 +9,6 @@ collections:
     editor:
       preview: false
     create: true
-    extension: ".md"
-    format: "frontmatter"
     folder: "src/pages/test-entries"
     slug: "{{fields.identifier}}"
     fields:
