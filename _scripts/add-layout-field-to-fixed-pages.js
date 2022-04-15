@@ -56,6 +56,8 @@ async function main() {
       filePrefix = filePrefix.charAt(0).toUpperCase() + filePrefix.slice(1);
     }
 
+    console.log('filePrefix: ', filePrefix);
+
     // Get file content and convert to string
     let content = await fs.readFile(`${PAGES_DIR}${filename}`);
     content = String(content);
