@@ -16,3 +16,19 @@ collections:
       - {label: "Title", name: "title", widgt: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/TestEntry.astro"}
+  - name: "fixed_pages"
+    label: "Fixed Pages"
+    editor:
+      preview: false
+    create: false
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "src/pages/index.md"
+        format: "frontmatter"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Banner image", name: "banner_image", widget: "image"}
+          - {label: "Banner heading", name: "banner_heading", widget: "string"}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "./index.astro"}
