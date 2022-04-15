@@ -1,5 +1,4 @@
 ---
-layout: "../layouts/About.astro"
 title: About
 left_banner_image: /uploads/buildings.jpg
 right_banner_image: /uploads/deer.jpg
