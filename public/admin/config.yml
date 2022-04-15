@@ -40,7 +40,7 @@ collections:
     extension: ".md"
     format: "frontmatter"
     folder: "src/pages/test-entries/"
-    slug: "{{fields.identifier}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Identifier (set only once)", name: "identifier", widget: "string", hint: "URL friendly string containing only alphanumeric characters and hyphens. i.e. 'a-sample-identifier-1'"}
       - {label: "Title", name: "title", widget: "string"}
