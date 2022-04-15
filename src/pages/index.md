@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/Index.astro
 title: Homepage
 banner_image: /uploads/cats.jpg
 banner_heading: Look at these cats.
