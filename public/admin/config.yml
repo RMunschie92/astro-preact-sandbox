@@ -29,6 +29,14 @@ collections:
           - {label: "Right banner image", name: "right_banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
+      - name: "test-entries"
+        label: "Test Entries"
+        file: "src/pages/test-entries.md"
+        format: "frontmatter"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Banner image", name: "banner_image", widget: "image"}
+          - {label: "No entries message", name: "no_entries_message", widget: "string"}
   #
   # Test entries
   #
