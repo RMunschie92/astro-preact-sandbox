@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",
-    "build-site": "astro build",
+    "add-layout-field-to-fixed-pages": "cd _scripts && node add-layout-field-to-fixed-pages.js && cd ..",
+    "build-site": "npm run add-layout-field-to-fixed-pages && astro build",
     "preview": "astro preview"
   },
   "keywords": [],
