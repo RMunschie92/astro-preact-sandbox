@@ -18,6 +18,7 @@ catch {
     {testEntries.map((post) => (
       <li>
         <h1>{post.frontmatter.title}</h1>
+        <p>identifier: {post.frontmatter.identifier}</p>
         <a href={'test-entries/'+ post.frontmatter.identifier}>Read more</a>
       </li>
     ))}
