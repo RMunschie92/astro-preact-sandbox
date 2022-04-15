@@ -41,8 +41,21 @@ async function main() {
 
     // Get filename prefix
     let filePrefix = filename.slice(0, slicePointForFileExtension);
-    filePrefix = filePrefix.charAt(0).toUpperCase() + filePrefix.slice(1);
-  
+
+    // Handle special case for .md files that have hyphes in name
+    if (filePrefix.includes('-')) {
+      // Split on hyphens
+      filePrefix = filePrefix.split('-');
+      // Capitalize each first letter join into single string
+      let capitalized = [];
+      filePrefix.forEach(word => capitalized.push(word.charAt(0).toUpperCase() + word.slice(1)));
+      filePrefix = capitalized.join('');
+    }
+    // If no hyphens in filename prefix, simply capitalize first letter for layout
+    else {
+      filePrefix = filePrefix.charAt(0).toUpperCase() + filePrefix.slice(1);
+    }
+
     // Get file content and convert to string
     let content = await fs.readFile(`${PAGES_DIR}${filename}`);
     content = String(content);
