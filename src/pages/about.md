@@ -3,6 +3,7 @@ title: About
 left_banner_image: /uploads/buildings.jpg
 right_banner_image: /uploads/deer.jpg
 banner_heading: A tower and a deer
+layout: '../layouts/About.astro'
 ---
 ## A second heading
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor. At urna condimentum mattis pellentesque. Sed lectus vestibulum mattis ullamcorper velit sed. Nunc eget lorem dolor sed viverra ipsum nunc. Ac felis donec et odio pellentesque diam. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Etiam dignissim diam quis enim lobortis scelerisque. Luctus venenatis lectus magna fringilla. _Adipiscing enim eu turpis egestas pretium aenean._

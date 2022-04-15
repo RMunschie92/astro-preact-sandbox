@@ -2,6 +2,7 @@
 title: Homepage
 banner_image: /uploads/cats.jpg
 banner_heading: Look at these cats!
+layout: '../layouts/Index.astro'
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis vel eros donec ac odio tempor orci. Aliquet nibh praesent tristique magna. Quis vel eros donec ac. Lectus quam id leo in. Quam adipiscing vitae proin sagittis. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Ut ornare lectus sit amet est. Nullam vehicula ipsum a arcu cursus vitae congue. 
 
