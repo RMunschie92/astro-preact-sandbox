@@ -15,6 +15,12 @@ collections:
         file: "src/pages/index.md"
         format: "frontmatter"
         fields:
+          - label: "Layout"
+            name: "layout"
+            widget: "select"
+            options:
+              - { label: "Homepage", value: "../layouts/Index.astro" }
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Banner image", name: "banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
@@ -24,6 +30,12 @@ collections:
         file: "src/pages/about.md"
         format: "frontmatter"
         fields:
+          - label: "Layout"
+            name: "layout"
+            widget: "select"
+            options:
+              - { label: "About", value: "../layouts/About.astro" }
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Left banner image", name: "left_banner_image", widget: "image"}
           - {label: "Right banner image", name: "right_banner_image", widget: "image"}
@@ -34,6 +46,11 @@ collections:
         file: "src/pages/test-entries-list.md"
         format: "frontmatter"
         fields:
+          - label: "Layout"
+            name: "layout"
+            widget: "select"
+            options:
+              - { label: "Test Entries List", value: "../layouts/TestEntriesList.astro" }
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Banner image", name: "banner_image", widget: "image"}
           - {label: "No entries message", name: "no_entries_message", widget: "string"}
