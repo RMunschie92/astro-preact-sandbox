@@ -29,3 +29,20 @@ collections:
           - {label: "Right banner image", name: "right_banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
+  #
+  # Test entries
+  #
+  - name: "test_entries"
+    label: "Test Entries"
+    editor:
+      preview: false 
+    create: true
+    extension: ".md"
+    format: "frontmatter"
+    folder: "src/pages/test-entries/"
+    slug: "{{fields.identifier}}"
+    fields:
+      - {label: "Identifier (set only once)", name: "identifier", widget: "string", hint: "URL friendly string containing only alphanumeric characters and hyphens. i.e. 'a-sample-identifier-1'"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Banner image", name: "banner_image", widget: "image"}
+      - {label: "Content", name: "body", widget: "markdown"}
