@@ -31,7 +31,7 @@ collections:
           - {label: "Banner image", name: "banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/Index.astro"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/Index.astro", required: true}
       - name: "about"
         label: "About"
         file: "src/pages/about.md"
@@ -42,4 +42,4 @@ collections:
           - {label: "Right banner image", name: "right_banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/About.astro"} 
+          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/About.astro", required: true} 
