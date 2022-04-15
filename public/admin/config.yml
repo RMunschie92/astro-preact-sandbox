@@ -12,7 +12,7 @@ collections:
     files:
       - name: "homepage"
         label: "Homepage"
-        file: "src/pages/fixed-pages/index.md"
+        file: "src/pages/index.md"
         format: "frontmatter"
         fields:
           - {label: "Title", name: "title", widget: "string"}
@@ -21,7 +21,7 @@ collections:
           - {label: "Content", name: "body", widget: "markdown"}
       - name: "about"
         label: "About"
-        file: "src/pages/fixed-pages/about.md"
+        file: "src/pages/about.md"
         format: "frontmatter"
         fields:
           - {label: "Title", name: "title", widget: "string"}
