@@ -64,6 +64,7 @@ async function main() {
 
     // Skip any files that already have a layout field
     if (content.includes('layout:')) {
+      console.log('skip ', filePrefix);
       continue;
     }
 
