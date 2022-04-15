@@ -7,12 +7,13 @@ import '../styles/pages/index.css';
 // The content prop gives access to frontmatter in a layout
 const { content } = Astro.props;
 ---
-<Base title="Index">
+<Base title="About">
   <h2>{content.title}</h2>
 
   <p>{content.banner_heading}</p>
 
-  <img src={content.banner_image} />
+  <img src={content.left_banner_image} />
+  <img src={content.right_banner_image} />
 
   <article>
     <slot />

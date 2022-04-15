@@ -1,6 +1,8 @@
 ---
 import GlobalHeader from '../components/commons/GlobalHeader.astro';
 import GlobalFooter from '../components/commons/GlobalFooter.astro';
+
+// Get props sent to layout via frontmatter
 const { props } = Astro;
 const bodyClass = props.title[0].toLowerCase() + props.title.substring(1);
 ---
