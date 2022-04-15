@@ -29,9 +29,9 @@ collections:
           - {label: "Right banner image", name: "right_banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
-      - name: "test-entries"
-        label: "Test Entries"
-        file: "src/pages/test-entries.md"
+      - name: "test-entries-list"
+        label: "Test Entries List"
+        file: "src/pages/test-entries-list.md"
         format: "frontmatter"
         fields:
           - {label: "Title", name: "title", widget: "string"}
