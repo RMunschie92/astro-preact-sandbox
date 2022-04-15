@@ -36,7 +36,7 @@ async function main() {
 
     // Skip any non markdown files
     if (fileExtension !== '.md') {
-      return;
+      continue;
     }
 
     // Get filename prefix
