@@ -12,22 +12,20 @@ collections:
     files:
       - name: "homepage"
         label: "Homepage"
-        file: "src/pages/index.md"
+        file: "src/pages/fixed-pages/index.md"
         format: "frontmatter"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Banner image", name: "banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/Index.astro"}
           - {label: "Content", name: "body", widget: "markdown"}
       - name: "about"
         label: "About"
-        file: "src/pages/about.md"
+        file: "src/pages/fixed-pages/about.md"
         format: "frontmatter"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Left banner image", name: "left_banner_image", widget: "image"}
           - {label: "Right banner image", name: "right_banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/About.astro"}
           - {label: "Content", name: "body", widget: "markdown"}
