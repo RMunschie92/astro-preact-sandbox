@@ -1,40 +1,18 @@
 ---
-import GlobalHeader from '../components/commons/GlobalHeader.astro';
-import GlobalFooter from '../components/commons/GlobalFooter.astro';
+// Imports
+import Base from '../layouts/Base.astro';
+import Counter from '../components/specifics/Counter.jsx';
 import '../styles/layouts/TestEntry.css';
 
 // Access frontmatter/markdown from source file
 const { content } = Astro.props;
 ---
-<html>
-  <head>
-    <title>Test Entry | Astro Preact</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<Base title="Index">
+  <h2>{content.title}</h2>
 
-    <!-- Global stylesheets -->
-    <style is:global>@import '../styles/global.css';</style>
+  <article>
+    <slot />
+  </article>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" />
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" />
-    </noscript>
-  </head>  
-
-  <body class="test-entry">
-    <GlobalHeader />
-
-    <main>
-      <article>
-
-        <h2>{content.title}</h2>
-        <slot /> <!-- Child passed is injected here -->
-      </article>
-    </main>
-
-    <GlobalFooter />
-  </body>
-</html>
+  <Counter client:load />
+</Base>
