@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "astro dev",
     "add-layout-field-to-fixed-pages": "cd _scripts && node add-layout-field-to-fixed-pages.js && cd ..",
-    "build-site": "astro build && npm run add-layout-field-to-fixed-pages",
+    "dev": "npm run add-layout-field-to-fixed-pages && astro dev",
+    "build-site": "npm run add-layout-field-to-fixed-pages && astro build",
     "preview": "astro preview"
   },
   "keywords": [],
