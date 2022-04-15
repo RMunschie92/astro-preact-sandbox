@@ -1,0 +1,8 @@
+---
+title: Homepage
+banner_image: /uploads/cats.jpg
+banner_heading: Look at these cats
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Velit egestas dui id ornare. Arcu dictum varius duis at consectetur. Pretium viverra suspendisse potenti nullam ac. Consectetur adipiscing elit ut aliquam purus sit amet luctus. Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Nibh venenatis cras sed felis eget velit aliquet sagittis. Risus pretium quam vulputate dignissim suspendisse in est ante in. Suspendisse ultrices gravida dictum fusce ut placerat orci. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Purus gravida quis blandit turpis. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Libero nunc consequat interdum varius. Lobortis elementum nibh tellus molestie. Convallis aenean et tortor at risus viverra adipiscing at. Diam vel quam elementum pulvinar etiam non quam lacus suspendisse.
+
+Ultricies mi quis hendrerit dolor magna. Velit euismod in pellentesque massa placerat duis ultricies lacus. Diam phasellus vestibulum lorem sed risus. Tellus id interdum velit laoreet id donec. Ornare aenean euismod elementum nisi quis eleifend. Gravida neque convallis a cras semper auctor neque. Amet volutpat consequat mauris nunc congue nisi vitae. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Urna et pharetra pharetra massa. Nunc aliquet bibendum enim facilisis gravida neque convallis a.
