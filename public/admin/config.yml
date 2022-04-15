@@ -31,4 +31,4 @@ collections:
           - {label: "Banner image", name: "banner_image", widget: "image"}
           - {label: "Banner heading", name: "banner_heading", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "./index.astro"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/Index.astro"}
