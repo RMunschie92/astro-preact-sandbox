@@ -81,3 +81,21 @@ collections:
       - {label: "Banner image", name: "banner_image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/TestEntry.astro"}
       - {label: "Content", name: "body", widget: "markdown"}
+  #
+  # Blog entries
+  #
+  - name: "blog_entries"
+    label: "Blog Entries"
+    editor:
+      preview: false 
+    create: true
+    extension: ".md"
+    format: "frontmatter"
+    folder: "src/pages/blog-entries/"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Identifier (set only once)", name: "identifier", widget: "string", hint: "URL friendly string containing only alphanumeric characters and hyphens. i.e. 'a-sample-identifier-1'"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Banner image", name: "banner_image", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/TestEntry.astro"}
+      - {label: "Content", name: "body", widget: "markdown"}
