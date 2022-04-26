@@ -7,7 +7,7 @@ import '../styles/pages/test-entries.css';
 let testEntries = [];
 let noEntriesMessageClass = 'hidden';
 try {
-  testEntries = await Astro.glob('./test-entries/*.md');
+  testEntries = await Astro.glob('../pages/test-entries/*.md');
 }
 catch {
   noEntriesMessageClass = '';
@@ -25,7 +25,7 @@ catch {
       <li>
         <h2>{post.frontmatter.title}</h2>
         <p>identifier: {post.frontmatter.identifier}</p>
-        <a href={'test-entries/'+ post.frontmatter.identifier}>Read more</a>
+        <a href={post.url}>Read more</a>
       </li>
     ))}
   </ul>
