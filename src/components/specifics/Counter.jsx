@@ -8,7 +8,7 @@ import { useState } from 'preact/hooks';
 import '../../styles/components/specifics/Counter.css';
 
 // Components
-import Button from '../generics/Button';
+import Button from '../generics/Button.jsx';
 
 //------------------------------------------------------------------------------
 // Component
